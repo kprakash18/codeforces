@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++: Build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-O2",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${file}",
+                "-o",
+                "${fileDirname}/solution"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build the active C++ file"
+        },
+        {
+            "label": "C++: Run with input.txt",
+            "type": "shell",
+            "dependsOn": "C++: Build",
+            "command": "${fileDirname}/solution < ${workspaceFolder}/input.txt",
+            "problemMatcher": [],
+            "detail": "Build and run the active C++ file with input.txt"
+        }
+    ]
+}

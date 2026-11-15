@@ -1,0 +1,27 @@
+{
+    "Competitive programming starter": {
+        "prefix": "cp",
+        "body": [
+            "#include <algorithm>",
+            "#include <iostream>",
+            "#include <vector>",
+            "using namespace std;",
+            "",
+            "using ll = long long;",
+            "",
+            "void solve() {",
+            "\t$0",
+            "}",
+            "",
+            "int main() {",
+            "\tios::sync_with_stdio(false);",
+            "\tcin.tie(nullptr);",
+            "",
+            "\tint testCases = 1;",
+            "\t// cin >> testCases;",
+            "\twhile (testCases--) solve();",
+            "}"
+        ],
+        "description": "C++17 competitive programming starter"
+    }
+}
