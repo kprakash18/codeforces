@@ -1,3 +1,5 @@
 solution
 solution.exe
 .DS_Store
+*.bin
+.cph/
